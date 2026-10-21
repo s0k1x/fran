@@ -287,6 +287,8 @@ body.paused *{animation-play-state:paused!important}
 @media (orientation:portrait) and (max-width:700px){#rotate:not(.hide){display:flex}}
 #buy{position:absolute;inset:0;z-index:90;background:rgba(5,6,10,.88);display:none;padding:70px 70px 40px}
 #buy.show{display:block}
+body.paused #buy *{animation-play-state:running!important}
+#buy .tile{opacity:1!important}
 #buy h3{margin:0 0 22px;font:900 34px var(--display);text-transform:uppercase;color:var(--lime)}
 #buy .grid{position:static;opacity:1;pointer-events:auto;grid-template-columns:repeat(3,1fr)}
 #buy .grid .tile{opacity:1;animation:tilein .5s both;animation-delay:calc(var(--i)*60ms)}
